@@ -33,16 +33,38 @@
 # else:
 #     print("fail", percentage)
 
-n=int(input("enter how many pairs you want to enter\n"))
-pairs=()
-for i in range(n):
-    key=input(f'Enter {i+1} key\n')
-    value=input(f'Enter {i+1} value\n')
-    if value.isdigit():
-        value=int(value)
+# n=int(input("enter how many pairs you want to enter\n"))
+# pairs=()
+# for i in range(n):
+#     key=input(f'Enter {i+1} key\n')
+#     value=input(f'Enter {i+1} value\n')
+#     if value.isdigit():
+#         value=int(value)
     
-    pairs.append((key,value))
+#     pairs.append((key,value))
 
-dictonary=dict(pairs)
-print("tuple is")
-print("new dictionary is ", dictonary)
+# dictonary=dict(pairs)
+# print("tuple is")
+# print("new dictionary is ", dictonary)
+# username="chai aur code"
+# def func():
+#     #username="code"
+#     print(username)
+
+# print(username)
+# func()
+# x=88
+
+# def func(b):
+#     c=x+b
+#     return c
+
+# print(func(2))
+def power(num):
+    def actual(x):
+        return x**num
+    return actual
+a=power(2)
+b=power(3)
+print(a(5))
+print(b(5))
