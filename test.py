@@ -60,11 +60,30 @@
 #     return c
 
 # print(func(2))
-def power(num):
-    def actual(x):
-        return x**num
-    return actual
-a=power(2)
-b=power(3)
-print(a(5))
-print(b(5))
+# def power(num):
+#     def actual(x):
+#         return x**num
+#     return actual
+# a=power(2)
+# b=power(3)
+# print(a(5))
+# print(b(5))
+def even_generator(limit):
+    for i in range(2,limit+1,2):
+        yield i
+
+
+
+a=even_generator(10)
+b=even_generator(10)
+c=even_generator(10)
+
+print(id(a))
+print(id(b))
+print(id(c))
+
+# print(id(even_generator(10)))
+# print(id(even_generator(10)))
+# print(id(even_generator(10)))
+
+
