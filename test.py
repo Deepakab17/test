@@ -68,22 +68,177 @@
 # b=power(3)
 # print(a(5))
 # print(b(5))
-def even_generator(limit):
-    for i in range(2,limit+1,2):
-        yield i
+# def even_generator(limit):
+#     for i in range(2,limit+1,2):
+#         yield i
 
 
 
-a=even_generator(10)
-b=even_generator(10)
-c=even_generator(10)
+# a=even_generator(10)
+# print(next(a))
+# print(next(a))
+# print(next(a))
+# print(next(a))
+#  print(id(a))
+#  print(id(a))
+#  print(id(a))
 
-print(id(a))
-print(id(b))
-print(id(c))
+# print(next(even_generator(10)))
+# print(next(even_generator(10)))
+# print(next(even_generator(10)))
+# def factorial(num):
+#     factorial=1
+#     for i in range(1,num+1):
+#         factorial=factorial*i
+#     return factorial
+    
 
-# print(id(even_generator(10)))
-# print(id(even_generator(10)))
-# print(id(even_generator(10)))
+# fac=factorial(5)
+# print(fac)
+# def perfect(num):
+#     sum=0
+#     for i in range(1,num):
+#         if num%i==0:
+#          sum=sum+i
+
+#     if sum==num:
+#        print("perfect number")
+#     else:
+#        print("not perfect")
+
+
+
+
+# # perfect(6)
+# def armstrong(num):
+#     sum=count=0
+#     original= new=num
+
+#     while num>0:
+#         count=count+1
+#         num=num//10
+#     while new >0:
+#         digit=new%10
+#         sum=sum+digit**count
+#         new=new//10
+
+#     if sum==original:
+#         print( "armstrong number")
+#     else:
+#         print ("not armstrrong")
+
+
+# arm=armstrong(370)
+# print(arm)
+        
+# def prime(number):
+#     count=0
+#     for i in range(1,number+1):
+#         if number%i==0:
+#             count=count+1
+#     if count==2:
+#         print("prime number")
+#     else:
+#         print("not prime")
+
+# p=prime(13)
+# n=int(input("enter how many pairs you want to write\n"))
+# list=[]
+# for i in range(1,n+1):
+#     key=input(f'enter {i} no key\n')
+#     value=input(f'Enter {i} value\n')
+#     if value.isdigit():
+#         value=int(value)
+#     list.append((key,value))
+
+# dictnory=dict(list)
+# print(f'converted dictonary is {dictnory}')
+# n=int(input("enter number of rows in pyramid"))
+# for i in range(1,n+1):
+#     print(' '*(n-i)+' *' *i)
+# n = int(input("Enter number of rows in pyramid: "))
+
+# for i in range(1, n + 1):
+#     spaces = ' ' * (n - i)
+
+#     if i == 1:
+#         print(spaces + ' *')
+#     elif i == n:
+#         print(' *' * n)
+#     else:
+#         print(spaces + ' *' + '  ' * (i - 2) + ' *')
+# t=int(input("enter number of key and value\n"))
+# pairs=()
+# for i in range(1,t+1):
+#     key=input(f'enter {i} key\n')
+#     value=input(f'enter {i} value\n')
+#     if value.isdigit():
+#         value=int(value)
+#     pairs=pairs+((key,value),)
+# dictionary=dict(pairs)
+# print(f'new dictionary is {dictionary}')
+# print(type(pairs))
+# i=1
+# while i<=3000:
+#     if i%100==0:
+#         print(i)
+#     else:
+#         pass
+#     i=i+1
+# for i in range(1,3001):
+#     if i%100==0:
+#         print(i)
+#     else:
+#         pass
+# l=[2,4,6,8,10,12,14,16,18,20]
+# inp=int(input("enter how many numbers you want to enter\n"))
+# l=[]
+# for i in range(1,inp+1):
+#     num=int(input(f'enter no {i} number\n'))
+#     l.append(num)
+
+    
+# print(sum(l))
+# n=int(input('enter till how many numbers you want fibonaci series'))
+# a=0
+# b=1
+# i=1
+# while i<=n:
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+#     i=i+1
+# n=int(input('enter till how many numbers you want fibonaci series'))
+# a=0
+# b=1
+# while a<=n:
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+# num=int(input("enter a number to find factorial"))
+# factorial=1
+# i=1
+# while i<=num:
+#     factorial=factorial*i
+#     i=i+1
+
+# print(factorial)
+  
+
+
+
+
+
+
+    
+   
+
+
+
+
+
+
 
 
