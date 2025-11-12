@@ -225,6 +225,43 @@
 #     i=i+1
 
 # print(factorial)
+# count=0
+# for i in range(1,21):
+#     if i%2==0:
+#         count=count+1
+#         print(i,"is even number and no of count is = ", count)
+#     else:
+#         pass
+# for i in range(50,61):
+#     if i%3==0:
+#         continue
+#     else:
+#         print(i,"is not divisible by 3")
+# a=int(input("enter 1 number"))
+# b=int(input("enter 1 number"))
+# c=int(input("enter 1 number"))
+# if a>b and a>c:
+#     print(a,"is greater")
+# elif b>a and b>c:
+#     print(b, "is greater")
+# else:
+#     print(c, "is greater")
+# n=int(input("enter how many terms you want to print"))
+# a=0
+# b=1
+# i=1
+# while i<=n:
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+ 
+#     i=i+1
+
+
+
+        
+
   
 
 
