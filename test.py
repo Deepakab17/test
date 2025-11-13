@@ -79,13 +79,13 @@
 # print(next(a))
 # print(next(a))
 # print(next(a))
-#  print(id(a))
-#  print(id(a))
-#  print(id(a))
+# print(id(a))
+# print(id(a))
+# print(id(a))
 
-# print(next(even_generator(10)))
-# print(next(even_generator(10)))
-# print(next(even_generator(10)))
+# print(id(next(even_generator(10))))
+# print(id(next(even_generator(10))))
+# print(id(next(even_generator(10))))
 # def factorial(num):
 #     factorial=1
 #     for i in range(1,num+1):
@@ -255,8 +255,29 @@
 #     c=a+b
 #     a=b
 #     b=c
- 
 #     i=i+1
+# name=input("enter your name\n")
+# if "a" in name:
+#     print("a is there")
+# else:
+#     print("a is not there")
+# for i in range(1,11):
+#         print(i*7)
+first=int(input("enter first side"))
+second=int(input("enter second side"))
+third=int(input("enter third side"))
+if first==second and first==third:
+    print("equilateral triangle.")
+elif first==second or first==third or second==third:
+    print("isolace triangle")
+elif first!=second and first!=third and second!=third:
+    print("sclane triangle")
+
+    
+
+
+
+    
 
 
 
