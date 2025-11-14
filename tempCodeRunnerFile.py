@@ -1,9 +1,12 @@
-a=int(input("enter 1 number"))
-b=int(input("enter 1 number"))
-c=int(input("enter 1 number"))
-if a>b:
-    print(a,"is greater")
-elif c>b:
-    print(c, "is greater")
-else:
-    print(b, "is greater")
+def perfect(n):
+    sum=0
+    for i in range(1,n):
+        if n%i==0:
+            sum+=i
+        
+    if sum==n:
+        print("perfect")
+    else:
+        print("not perfect")
+
+perfect(14)

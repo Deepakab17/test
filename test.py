@@ -263,16 +263,101 @@
 #     print("a is not there")
 # for i in range(1,11):
 #         print(i*7)
-first=int(input("enter first side"))
-second=int(input("enter second side"))
-third=int(input("enter third side"))
-if first==second and first==third:
-    print("equilateral triangle.")
-elif first==second or first==third or second==third:
-    print("isolace triangle")
-elif first!=second and first!=third and second!=third:
-    print("sclane triangle")
+# first=int(input("enter first side"))
+# second=int(input("enter second side"))
+# third=int(input("enter third side"))
+# if first==second and first==third:
+#     print("equilateral triangle.")
+# elif first==second or first==third or second==third:
+#     print("isolace triangle")
+# elif first!=second and first!=third and second!=third:
+#     print("sclane triangle")
+# n=int(input("give a number\n"))
+# if n<0:
+#         print("please put a valid number")
+# else:
+#     sum_even=0
+#     sum_odd=0
+#     count_even=0
+#     count_odd=0
 
+#     for i in range(1,n+1):
+#         if i%2==0:
+#                 sum_even=sum_even+i
+#                 count_even+=1
+#         else:
+#               sum_odd=sum_odd+i
+#               count_odd+=1
+            
+#     print("sum of even is = ", sum_even)
+#     print("sum of odd is = ", sum_odd)
+#     print("count of even is = ", count_even) 
+#     print("count of odd is = ", count_odd)
+# class student:
+#     def __init__(self,a, b):
+#         x = 10
+#         print(locals())
+# obj=student(10,20)
+# def fun(*args):
+#     print(type(args))
+#     print(args)
+# t=eval(input("enter anything"))
+# fun(t)
+
+# def fun(*args):
+#     print(type(args))
+#     print(args)
+# t=eval(input("enter anything"))
+# fun(t)
+# def user(**key):
+#     print(key)
+#     return(type(key))
+# print(type(user(aman=1,deepak=2)))
+# ---------------------------------------------------------------------------reverse a list using function-------------------------------------------------
+
+# def perfect(n):                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+#     sum=0
+#     for i in range(1,n):
+#         if n%i==0:
+#             sum+=i
+        
+#     if sum==n:
+#         print("perfect")
+#     else:
+#         print("not perfect")
+
+# perfect(14)
+# n=int(input("enter how many numbers you want to put\n"))
+# l=[]
+# for i in range(1,n+1):
+#     inp=input(f"enter {i} number\n")
+#     l.append(inp)
+# reverse=l[::-1]
+# print(reverse)
+n=int(input("enter terms of value you want to enter"))
+tup=()
+for i in range(1,n+1):
+    inp=input(f'enter {i}  value')
+    
+
+
+
+
+
+        
+
+
+        
+
+    
+ 
+
+            
+
+    
+        
+
+        
     
 
 
