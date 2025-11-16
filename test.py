@@ -35,13 +35,13 @@
 
 # n=int(input("enter how many pairs you want to enter\n"))
 # pairs=()
-# for i in range(n):
-#     key=input(f'Enter {i+1} key\n')
-#     value=input(f'Enter {i+1} value\n')
+# for i in range(1,n+1):
+#     key=input(f'Enter {i} key\n')
+#     value=input(f'Enter {i} value\n')
 #     if value.isdigit():
 #         value=int(value)
     
-#     pairs.append((key,value))
+#     pairs=pairs+((key,value),)
 
 # dictonary=dict(pairs)
 # print("tuple is")
@@ -334,11 +334,36 @@
 #     l.append(inp)
 # reverse=l[::-1]
 # print(reverse)
-n=int(input("enter terms of value you want to enter"))
-tup=()
-for i in range(1,n+1):
-    inp=input(f'enter {i}  value')
+# n=int(input("enter terms of key and value you want to enter"))
+# tup=()
+# for i in range(1,n+1):
+#     key=input(f'enter {i}  key')
+#     value=input(f"enter {i} value")
+#     if value.isdigit():
+#         value=int(value)
+#     tup=tup+((key,value),)
+# dictionary=dict(tup)
+# print(dictionary)
+# Question 1. Write a program to convert a list of tuples into a dictionary.
+# n=int(input("enter how many terms you want to print\n"))
+# pairs=()
+# for i in range(1,n+1):
+#     key=input(f"enter number {i} key\n")
+#     value=input(f"enter number {i} value\n")
+#     if value.isdigit():
+#         value=int(value)
+#     pairs=pairs+((key,value),)
+# dictionary=dict(pairs)
+# print("old value is", pairs)
+# print(type(pairs))
+# print("new dictionary is ", dictionary)
+# print(type(dictionary))
+
+
+
+
     
+
 
 
 
