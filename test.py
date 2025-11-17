@@ -358,7 +358,34 @@
 # print(type(pairs))
 # print("new dictionary is ", dictionary)
 # print(type(dictionary))
+# def prime(n):
+#     sum=0
 
+# prime(6)
+# def factorial(num):
+#     if num == 0 or num == 1:
+#         return 1
+#     return num * factorial(num - 1)
+
+# print(factorial(6))
+# n=9
+# for i in range(1,n+1,2):
+#     print(''*(n-i)+'*'*i)
+# n=5
+# for i in range(0,n):
+#     print(''*i+'*'*(n-i))
+n=9
+for i in range(1,n+1,2):
+    print(' '*((n-i)//2)+'*'*i)
+
+    
+
+
+
+
+
+
+    
 
 
 
