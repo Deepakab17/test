@@ -374,9 +374,52 @@
 # n=5
 # for i in range(0,n):
 #     print(''*i+'*'*(n-i))
-n=9
-for i in range(1,n+1,2):
-    print(' '*((n-i)//2)+'*'*i)
+# n=9
+# for i in range(1,n+1,2):
+#     print(' '*((n-i)//2)+'*'*i)
+# n=int(input("enter how many terms you wa nt to print"))
+# a=0
+# b=1
+# i=1
+# while i<=n:
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+#     i=i+1
+# n=int(input("how many terms\n"))
+# a=0
+# b=2
+# for i in range(1,n+1):
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+# n=5
+# for i in range (1,n+1):
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     print()
+class GrandParent:
+    def car(self,brand,model):
+        self.b=brand
+        self.m=model
+        print("GP's Car")
+class Parent(GrandParent):
+        def car(self,brand,model):
+            self.b,self.m=brand,model
+            print("Parent's Car")
+            super().car()
+class Child(Parent):
+    def car(self,brand,model):
+        self.b,self.m=brand,model
+        print("child's car")
+        super().car()
+
+obj=Child()
+
+        
+    
 
     
 
