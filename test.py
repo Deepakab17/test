@@ -400,23 +400,95 @@
 #     for j in range(1,i+1):
 #         print(j,end="")
 #     print()
-class GrandParent:
-    def car(self,brand,model):
-        self.b=brand
-        self.m=model
-        print("GP's Car")
-class Parent(GrandParent):
-        def car(self,brand,model):
-            self.b,self.m=brand,model
-            print("Parent's Car")
-            super().car()
-class Child(Parent):
-    def car(self,brand,model):
-        self.b,self.m=brand,model
-        print("child's car")
-        super().car()
+# class GrandParent:
+#     def car(self,brand,model):
+#         self.b=brand
+#         self.m=model
+#         print("GP's Car",self.b,self.m)
+# class Parent(GrandParent):
+#         def car(self,brand,model):
+#             self.b,self.m=brand,model
+#             print("Parent's Car",self.b,self.m)
+#             super().car("AMC","Javelin")
+# class Child(Parent):
+#     def car(self,brand,model):
+#         self.b,self.m=brand,model
+#         print("child's car",self.b,self.m)
+#         super().car("Rolls Royace ", "Phantom")
 
-obj=Child()
+# obj=Child()
+# obj.car("Mercedes", " Mercedes-Benz 300 SL 'Gullwing' ")
+# print(obj.b)
+# from abc import ABC,abstractmethod
+# class WebPage(ABC):
+#     def dashboard(self,name):
+#         print ('welcome to dashboard')
+#     def userprofile(self):
+#         print("User dahsboard")
+#     @abstractmethod
+#     def login(self,name,id):
+#         pass
+
+
+# class User(WebPage):
+#     def greet(self,profession):
+#         print(profession)
+#     def login(self,name,id):
+#         print(f"hello {name}, your id is {id}")
+
+# obj=User()
+# obj.dashboard("Arvind")
+# obj.login()
+from abc import ABC,abstractmethod
+import hashlib
+def encrypted(password):
+    return hashlib.sha256(password.encode()).hexdigest()
+@abstractmethod
+class WebPage(ABC):
+    def login(self,name,password):
+        pass
+    def dashboard(self,name):
+        print(f'Welcome, my friend {name} ! here is your dashboard')
+
+class User(WebPage):
+    def __init__(self):
+        self.user = {
+        'Deepak':encrypted("1718"),
+        'Aman'  :encrypted("9589"),
+        'Arvind':encrypted('1617')
+
+    }
+    def login(self,name,password):
+        if name not in self.user:
+            print("user does not exists")
+            return False
+        if encrypted(password)==self.user[name]:
+            print("login Successful")
+            self.dashboard(name)
+            return True
+
+        else:
+            print("password is not correct:please try again\n")
+            return False
+obj=User()
+attempts=3
+while attempts>0:
+    name=input("enter your name\n")
+    keyword=input("enter password\n")
+    if obj.login(name,keyword):
+        break
+    attempts-=1
+    print(f'Last {attempts} attempts left')
+    if attempts==0:
+        print("Authenticatipn denied\n")
+
+
+
+
+
+
+
+
 
         
     
